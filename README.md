@@ -15,13 +15,13 @@ This repository contains the Verilog HDL implementation and supporting materials
 - Development and verification of individual components (Address Multiplexor, Counter, Controller, Register, ALU, Memory) and final verification of the complete design.
 
 ## Components
-- `register_ac`: Accumulator register (`clk`, `rst`, `ld_ac`).
-- `register_ir`: Instruction register (`clk`, `rst`, `ld_ir`, `alu_out`).
-- `alu`: Arithmetic Logic Unit (`data`, `ac_out`, `opcode`).
-- `counter`: Program counter (`clk`, `rst`, `ld_pc`, `inc_pc`).
-- `mux`: Multiplexor (`ir_addr`, `pc_addr`, `rd`, `wr`, `ld_ir`, `ld_ac`, `ld_pc`, `inc_pc`, `halt`, `data_e`, `sel`).
-- `controller`: Controller.
-- **clk**: Phase generator (`clk`, `rst`, `phase`, `zero`, `alu_out`).
-- `memory`: Memory (`addr`, `data`, `sel`, `data`, `clk`).
-- `driver`: Driver.
-- `risc_test`: Testbench file for simulating the VeriRISC CPU design.
+- `register_ac.v`: Accumulator register (`clk`, `rst`, `ld_ac`).
+- `register_ir.v`: Instruction register (`clk`, `rst`, `ld_ir`, `alu_out`).
+- `alu.v`: Arithmetic Logic Unit (`data`, `ac_out`, `opcode`).
+- `counter.v`: Program counter (`clk`, `rst`, `ld_pc`, `inc_pc`).
+- `mux.v`: Multiplexor (`ir_addr`, `pc_addr`, `rd`, `wr`, `ld_ir`, `ld_ac`, `ld_pc`, `inc_pc`, `halt`, `data_e`, `sel`).
+- `controller.v`: Controller.
+- `clk.v`: Phase generator (`clk`, `rst`, `phase`, `zero`, `alu_out`).
+- `memory.v`: Memory (`addr`, `data`, `sel`, `data`, `clk`).
+- `driver.v`: Data buffer.
+- `risc_test.v`: Testbench file for simulating the VeriRISC CPU design.
