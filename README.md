@@ -15,13 +15,14 @@ This repository contains the Verilog HDL implementation and supporting materials
 - Development and verification of individual components (Address Multiplexor, Counter, Controller, Register, ALU, Memory) and final verification of the complete design.
 
 ## Components
-- `register_ac.v`: Accumulator register (`clk`, `rst`, `ld_ac`).
-- `register_ir.v`: Instruction register (`clk`, `rst`, `ld_ir`, `alu_out`).
-- `alu.v`: Arithmetic Logic Unit (`data`, `ac_out`, `opcode`).
-- `counter.v`: Program counter (`clk`, `rst`, `ld_pc`, `inc_pc`).
-- `mux.v`: Multiplexor (`ir_addr`, `pc_addr`, `rd`, `wr`, `ld_ir`, `ld_ac`, `ld_pc`, `inc_pc`, `halt`, `data_e`, `sel`).
-- `controller.v`: Controller.
-- `clk.v`: Phase generator (`clk`, `rst`, `phase`, `zero`, `alu_out`).
-- `memory.v`: Memory (`addr`, `data`, `sel`, `data`, `clk`).
-- `driver.v`: Data buffer.
-- `risc_test.v`: Testbench file for simulating the VeriRISC CPU design.
+- `register_ac.v`: The accumulator register, a key storage element for arithmetic and logic operations within the processor.
+- `register_ir.v`: The instruction register, responsible for holding the current instruction being executed.
+- `alu.v`: The Arithmetic Logic Unit, which performs the computational tasks of the processor.
+- `counter.v`: The program counter, used to keep track of the memory address of the next instruction to be fetched.
+- `mux.v`: The address multiplexor, which selects between different address sources for memory access.
+- `controller.v`: The controller, managing the overall operation and coordination of the processor's components.
+- `counter.v`: The phase generator, providing the timing phases for the fetch-and-execute cycle.
+- `memory.v`: The memory unit, storing both instructions and data for the processor.
+- `driver.v`: The driver, facilitating the interaction and control of the processor's operations.
+- `risc.v` : The top module file for this project.
+- `risc_test.v`: The testbench file, designed to simulate and validate the VeriRISC CPU design.
