@@ -1,4 +1,4 @@
-# VeriRISC CPU Design
+# MIPS CPU Design
 
 This repository contains the Verilog HDL implementation and supporting materials for the **VeriRISC CPU Design**, a very-reduced-instruction-set processor. The project is designed to help users understand and build a simplified processor architecture, now including a testbench for simulation.
 
